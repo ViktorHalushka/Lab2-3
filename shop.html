@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="Other/photo/other_photo/icon-fruits-1.png">
+    <link rel="stylesheet" href="Other/style.css">
+    <title>Vitamin+</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li class="nav-item"><a href="index.html" class="button">Home</a></li>
+                <li class="nav-item"><a href="shop.html" class="button-activ">Shop</a></li>
+            </ul>
+            <h1 class="logo">Vitamin+</h1>
+            <ul class="secondary-nav-list">
+                <li class="nav-item"><a href="registration.html" class="button">Реєстрація</a></li>
+                <button class="cart_button" id="openModal">Кошик</button>
+
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Кошик</h2>
+                        <div id="cart-items">
+                        </div>
+                        <div id="total">Загальна сума: $0</div>
+                        <button id="orderButton">Замовити</button>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1 id="hello"></h1>
+        <h2></h2>
+    </section>
+    <section c>
+        <h2></h2>
+        <div class="block-filter">
+            <button onclick="loadProducts(1)" class="filter-buttom">Fruits</button>
+            <button onclick="loadProducts(2)" class="filter-buttom">Dried fruits</button>
+            <button onclick="loadProducts(5)" class="filter-buttom">Vegetables</button>
+            <button onclick="loadProducts(3)" class="filter-buttom">Mushrooms</button>
+            <button onclick="loadProducts(4)" class="filter-buttom">Spices</button>
+        </div>
+        <ul id="produc-list" class="boxin"></ul>
+    </section>
+    <section>
+        <!-- <div id="myModal2" class="modal2">   
+            <div class="modal-content2">
+                <p class="content-lemon">Today 30% discount on Citrus fruits</p>
+                <button id="Extend" class="baton">Extend</button>
+                <button id="Close" class="baton">Close</button>
+            </div>
+        
+        </div> -->
+    </section>
+
+    <footer class="footer">
+        <div class="logo-fouter-container"> <span class="Fresh-fruits">Fresh</span> <span
+                class="logo-Fresh-fruits">fruits</span></div>
+        <div class="left">
+            <a href="https://goo.gl/maps/JZCiQYJBEJ92gMPe6" target="_blank">
+                <address>м. Чернівці, вул. Університецька, 28</address>
+            </a>
+            <p>+380988106261</p>
+            <a href="luxury_hotels@gmail.com" target="_blank">Зв'яжіться з нами</a>
+        </div>
+        <ul class="right">
+            <li><a href="https://www.facebook.com/fmi.org.ua/">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="https://instagram.com/studprofkom.cv.ua?igshid=MzRlODBiNWFlZA==">Instagram</a></li>
+        </ul>
+
+        <div class="Mar">
+            <h3>Підпишіться на нашу розсилку</h3>
+            <input class="input-field" type="text" name="email" id="email">
+            <button class="button-icon" type="button" id="subscribe">Підписатися</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

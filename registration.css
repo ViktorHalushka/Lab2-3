@@ -1,0 +1,52 @@
+
+.container {
+    position: absolute; /* Встановлюємо абсолютне позиціонування */
+    top: 50%; /* Розташовуємо верхню грань контейнера на 50% відносно верхнього краю сторінки */
+    left: 50%; /* Розташовуємо ліву грань контейнера на 50% відносно лівого краю сторінки */
+    transform: translate(-50%, -50%); /* Здійснюємо зсув контейнера на 50% вліво та 50% вверх, щоб він був точно по центру */
+    width: 150%; /* Ширина контейнера на 100% */
+    max-width: 450px; /* Максимальна ширина контейнера, щоб він не був занадто широким */
+    text-align: center; /* Центруємо текст у контейнері */
+}
+
+.registration-form {
+    border: 3px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 18px;
+    width: 300px;
+    border: 3px solid #5dec48;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+button {
+    padding: 20px 35px;
+    background-color:#5dec48;
+    color: #000000;
+    border: none;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

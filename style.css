@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+
+body {
+  font-family: 'Overlock SC', sans-serif;
+  background-color: #0ab020b6;
+  margin: 0%;
+
+}
+
+
+/* --- НАВІГАЦІЯ --- */
+.main-header {
+  background-color: #ffffff;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fresh-fruits {
+  padding-top: 0px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.main-nav-list {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.secondary-nav-list {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 20px;
+}
+
+.logo {
+  margin: 0;
+  color: #0ab020b6;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #0ab020b6;
+}
+
+.button-activ {
+
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 22px;
+
+  border-radius: 4px;
+  color: #0ab020b6;
+
+}
+
+.button:hover {
+  background-color: #0ab020b6;
+  border-radius: 4px;
+  color: white;
+}
+
+
+/* --- ТІЛО (Index) --- */
+ul {
+  list-style-type: none;
+}
+
+.fresh-fruits {
+  width: 100%;
+  height: 730px;
+  margin: 0px;
+  color: #ffffff;
+  display: inline-block;
+  background-image: url('./photo/avocado2.jpg');
+  background-size: cover;
+  /* або contain, в залежності від вашого вибору */
+  background-position: center;
+  /* визначте положення зображення */
+}
+
+
+
+.main-title {
+  font-size: 700%;
+  text-align: center;
+  margin-top: 250px;
+  margin-left: 50%;
+}
+
+.section-description {
+  font-size: 24px;
+}
+
+.main-info {
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.section-title {
+
+  font-size: 36px;
+}
+
+.section-description {
+
+  font-size: 30px;
+}
+
+
+/*---------- Наступний Контейнер -----------*/
+.no-main-class {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  color: #ffffff;
+
+  font-size: 36px;
+
+}
+
+.list-offers {
+  display: flex;
+
+  justify-content: center;
+  /* Відцентрує по горизонталі */
+
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .list-offers {
+    flex-direction: column;
+    /* Змінюємо орієнтацію на вертикальну */
+  }
+}
+
+
+.fruit-offers {
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 20px;
+}
+
+
+
+.fruit-img {
+  width: 300px;
+  height: 300px;
+  /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.discount-buttom {
+  text-decoration: none;
+  background-color: #0ab020b6;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  padding: 10px;
+  font-size: 18px;
+  width: 110px;
+}
+.discount-buttom:hover{
+  background-color: #0ab02092;
+  color: #000000;
+}
+
+
+/* Shop */
+.block-filter {
+
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+  gap: 20px;
+}
+
+
+.filter-buttom {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+
+  height: 55px;
+  width: 250px;
+
+  font-size: 18px;
+  color: #0ab020b6;
+
+}
+
+.filter-buttom:hover {
+  background-color: #0ab020b6;
+  color: #fefefe;
+}
+
+.boxin {
+
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .boxin {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .boxin {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.img-shop {
+  width: 300px;
+  height: 300px;
+  /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.mini-boxin {
+  width: 310px;
+  height: 520px;
+
+
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mini-boxin-info {
+  margin-left: 10px;
+}
+
+.price {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.addtobag {
+  background-color: #0ab020b6;
+  border: none;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.addtobag:hover {
+  background-color: #56c765b6;
+  padding: 8px;
+}
+
+
+/* The Modal (background) */
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+
+}
+
+.modal-content2 {
+
+  background-image: url('./photo/other_photo/Реклама лемонів.jpg');
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  height: 20vh;
+}
+
+.img-lemon {
+  width: 60%;
+}
+
+.content-lemon {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.baton {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+
+  width: 120px;
+  height: 40px;
+
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  background-color: #0ab020b6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.footer p {
+  color: white;
+  font-size: 20px;
+}
+
+.footer .left,
+.footer .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .left .triangle {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #172D54;
+}
+
+.logo-fouter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+footer button {
+  background-color: #E0B973;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.input-field {
+  height: 40px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.button-icon {
+  height: 40px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 0 10px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.Fresh-fruits {
+  color: #ffffff;
+  font-family: Adobe Garamond Pro;
+  font-size: 42px;
+  position: relative;
+}
+
+.logo-Fresh-fruits {
+  color: #ffffff;
+  font-family: Adobe Garamond Pro;
+  font-size: 22px;
+}
+
+/* Стиль для кошика */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Стилі для контейнера кошика */
+
+
+
+
+/* Стилізація кнопки кошика */
+.cart_button {
+  background-color: #4CAF50;
+  /* Зелений колір фону */
+  color: white;
+  /* Білий колір тексту */
+  padding: 10px 20px;
+  /* Зовнішні відступи кнопки */
+  border: none;
+  /* Відсутність рамки */
+  border-radius: 5px;
+  /* Закруглені кути */
+  cursor: pointer;
+  /* Курсор миші */
+  font-size: 16px;
+  /* Розмір тексту */
+  transition: background-color 0.3s ease;
+  /* Плавне перехід коліру фону при наведенні */
+}
+
+/* Стилізація кнопки кошика при наведенні */
+.cart_button:hover {
+  background-color: #89d58c;
+  /* Зелений колір фону при наведенні */
+}
+
+#cart-items {
+  margin-top: 20px;
+}
+
+/* Стилі для кожного товару у кошику */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item .remove-btn {
+  margin-left: 40px;
+  /* Відстань між кнопкою remove та іншими елементами */
+}
+
+/* Стилі для назви товару */
+.item-name {
+  flex: 2;
+  font-size: 40px;
+}
+
+/* Стилі для ціни товару */
+.item-price {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+/* Стилі для кнопок збільшення та зменшення кількості */
+.increase-btn,
+.decrease-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #0ab020b6;
+  /* Червоний колір */
+  border-radius: 50%;
+  /* Робить кнопку круглою */
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+  /* Колір тексту на кнопці */
+}
+
+.cart-item .quantity-value {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+
+}
+
+.cart-item .item-total {
+  font-size: 23px;
+  font-weight: bold;
+  color: #333;
+  align-items: center;
+}
+
+.cart-item .quantity-value {
+  margin-right: 2px;
+  /* Відстань між кількістю товару та ціною за одиницю */
+  margin-left: 2px;
+}
+
+.cart-item .item-total {
+  margin-right: 10px;
+  /* Відстань між кількістю товару та ціною за одиницю */
+  margin-left: 10px;
+}
+
+/* Стилі для кнопки видалення */
+.remove-btn {
+  background-color: #ff5a5a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Стилі для загальної суми замовлення */
+#total {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
+/* Стилізація кнопки "Замовити" */
+#orderButton {
+  background-color: #4CAF50;
+  /* Синій колір фону */
+  color: white;
+  /* Білий колір тексту */
+  padding: 10px 20px;
+  /* Зовнішні відступи кнопки */
+  border: none;
+  /* Відсутність рамки */
+  border-radius: 5px;
+  /* Закруглені кути */
+  cursor: pointer;
+  /* Курсор миші */
+  font-size: 16px;
+  /* Розмір тексту */
+  transition: background-color 0.3s ease;
+  /* Плавне перехід коліру фону при наведенні */
+}
+
+/* Стилізація кнопки "Замовити" при наведенні */
+#orderButton:hover {
+  background-color: #89d58c;
+  /* Синій колір фону при наведенні */
+}
