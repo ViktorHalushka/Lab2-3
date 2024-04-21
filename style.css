@@ -94,7 +94,7 @@ ul {
   margin: 0px;
   color: #ffffff;
   display: inline-block;
-  background-image: url('./photo/avocado2.jpg');
+  background-image: url('Other/photo/avocado2.jpg');
   background-size: cover;
   /* або contain, в залежності від вашого вибору */
   background-position: center;
